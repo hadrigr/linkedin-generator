@@ -37,14 +37,14 @@ Le corps du post aéré.
 
 # 3. Interface Utilisateur
 st.title("🚀 LinkedIn Bullshit Generator")
-st.subheader("Transformez votre quotidien comme votre influenceur LinkedIn préféré.")
+st.subheader("Transformez votre quotidien en vision marketable")
 
 user_input = st.text_input("Quelle action banale veux tu transformer en tartinable de conneries ?", 
                           placeholder="Ex: J'ai mangé une mangue.")
 
 level = st.select_slider("Niveau de bulshit", options=["Pro", "Expert", "Guru", "Divinité"])
 
-if st.button("Ecrire sa vie"):
+if st.button("Ecrire son mindset visionnaire"):
     if user_input:
         with st.spinner('Analyse de la scalabilité en cours...'):
             # On combine le prompt système avec l'entrée de l'utilisateur
@@ -55,6 +55,6 @@ if st.button("Ecrire sa vie"):
             # Affichage du résultat
             st.markdown("---")
             st.write(response.text)
-            st.button("Copier pour devenir viral 📈")
+            
     else:
         st.warning("Veuillez saisir une phrase pour commencer votre ascension sociale.")
