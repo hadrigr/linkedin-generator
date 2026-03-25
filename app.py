@@ -6,7 +6,7 @@ st.set_page_config(page_title="LinkedIn Bullshit Generator", page_icon="🚀")
 
 # 1. Configuration de l'API (Remplace par ta propre clé API)
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # 2. Le "Cœur" du système : Le Prompt
 SYSTEM_PROMPT = """
