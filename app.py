@@ -6,7 +6,7 @@ st.set_page_config(page_title="LinkedIn Bullshit Generator", page_icon="🚀")
 
 # 1. Configuration de l'API (Remplace par ta propre clé API)
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
-model = genai.GenerativeModel('gemini-2.5-flash')
+model = genai.GenerativeModel('gemini-3-flash')
 
 # 2. Le "Cœur" du système : Le Prompt
 SYSTEM_PROMPT = """
@@ -22,14 +22,14 @@ Instructions :
 
 # 3. Interface Utilisateur
 st.title("🚀 LinkedIn Bullshit Generator")
-st.subheader("Transformez votre quotidien en manifeste disruptif.")
+st.subheader("Transformez votre quotidien comme votre influenceur LinkedIn préféré.")
 
-user_input = st.text_input("Quelle action banale avez-vous faite aujourd'hui ?", 
-                          placeholder="Ex: J'ai bu un café tiède.")
+user_input = st.text_input("Quelle action banale veux tu transformer en tartinable de conneries ?", 
+                          placeholder="Ex: J'ai mangé une mangue.")
 
-level = st.select_slider("Niveau de prétention", options=["Pro", "Expert", "Guru", "Divinité"])
+level = st.select_slider("Niveau de bulshit", options=["Pro", "Expert", "Guru", "Divinité"])
 
-if st.button("Disrupter mon réseau"):
+if st.button("Ecrire sa vie"):
     if user_input:
         with st.spinner('Analyse de la scalabilité en cours...'):
             # On combine le prompt système avec l'entrée de l'utilisateur
