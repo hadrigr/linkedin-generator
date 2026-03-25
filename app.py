@@ -42,7 +42,7 @@ st.subheader("Transformez votre quotidien en vision bankable")
 user_input = st.text_input("Quelle action banale veux tu transformer en tartinable de conneries ?", 
                           placeholder="Ex: J'ai mangé une mangue.")
 
-level = st.select_slider("Niveau de bulshit", options=["Pro", "Expert", "Guru", "Divinité"])
+level = st.select_slider("Niveau de bulshit", options=["Corpo", "Expert", "Guru", "Divinité"])
 
 if st.button("Ecrire son mindset visionnaire"):
     if user_input:
