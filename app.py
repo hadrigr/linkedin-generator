@@ -37,7 +37,7 @@ Le corps du post aéré.
 
 # 3. Interface Utilisateur
 st.title("🚀 LinkedIn Bullshit Generator")
-st.subheader("Transformez votre quotidien en vision marketable")
+st.subheader("Transformez votre quotidien en vision bankable")
 
 user_input = st.text_input("Quelle action banale veux tu transformer en tartinable de conneries ?", 
                           placeholder="Ex: J'ai mangé une mangue.")
